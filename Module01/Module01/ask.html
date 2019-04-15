@@ -38,9 +38,12 @@
 
         function show_a_message(e) {
             var name = document.querySelector("input[name=name]");
+
+            console.error("This is bad");
             alert("Hi there " + name.value);
 
 
+            e.preventDefault();
         }
 
 
