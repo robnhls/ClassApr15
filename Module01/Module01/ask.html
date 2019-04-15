@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <style>
+        label{
+            display: block;
+            font-weight: bold;
+        }
+
+    </style>
+
+
+</head>
+<body>
+    <h1>Ask a question</h1>
+
+    <form>
+        <label>Name</label>
+        <input name="name" />
+
+        <label>Question</label>
+        <input name="question" />
+
+        <label>Email</label>
+        <input name="email" type="email" />
+
+        <label>Age of Asker</label>
+        <input name="ask" type="number" />
+
+        <input type="submit" value="I am the greatest. Click me" />
+    </form>
+
+
+    <script>
+
+        function show_a_message(e) {
+            var name = document.querySelector("input[name=name]");
+            alert("Hi there " + name.value);
+
+
+        }
+
+
+        var frm = document.querySelector("form");
+        frm.addEventListener("submit", show_a_message);
+
+
+
+    </script>
+
+</body>
+</html>
